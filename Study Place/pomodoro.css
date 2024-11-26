@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #001334; /* Azul oscuro con tonalidad morada */
+    --secondary-color: #4b5d8d; /* Azul claro para contrastes */
+    --background-color: #f0f4f8; /* Color de fondo */
+    --text-color: #333; /* Color del texto */
+    --accent-color: aqua; /* Color de acento para botones */
+    --white: #ffffff;
+    --transition: 0.3s ease;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header, .hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2em 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav__link {
+    display: flex;
+    gap: 2em;
+}
+
+.nav__items {
+    list-style: none;
+    position: relative;
+}
+
+.nav__links {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5em;
+    transition: var(--transition);
+}
+
+.nav__links:hover {
+    color: var(--accent-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    padding: 0.5em 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: var(--transition);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.about {
+    padding: 2em 1em;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about__paragraph {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fondo__cronometre{
+    background-color: #001334;
+    padding: 30px;
+}
+
+.Cronometre {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    background: #001334;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 60px aqua;
+    border: 2px solid aqua;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#timer {
+    margin-bottom: 20px;
+}
+
+#time-display {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#status {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #001334;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(102, 114, 241);
+}
+
+button:disabled {
+    background-color: rgb(102, 114, 241);
+    cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.footer__container {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.footer__section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer__section a {
+    text-decoration: none;
+    color: rgb(195, 195, 195);
+    transition: var(--transition);
+}
+
+.footer__section a:hover {
+    color: var(--accent-color);
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-media a:hover {
+    color: var(--accent-color);
+}
+
+.footer__copy {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
